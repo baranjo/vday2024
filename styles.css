@@ -54,3 +54,8 @@ img {
     height: auto;
     object-fit: cover; /* Cover ensures images fill their designated space without distortion */
 }
+
+.grid {
+    display: flex;
+    flex-direction: column;
+}
