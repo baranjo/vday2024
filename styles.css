@@ -45,7 +45,7 @@ section {
 
 img {
     width: auto; /* Ensure images do not overflow their container */
-    height: 300px;
+    height: 250px;
     object-fit: cover; /* Cover ensures images fill their designated space without distortion */
 }
 
