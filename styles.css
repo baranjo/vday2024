@@ -3,7 +3,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full screen height */
+    /* height: 100vh; Full screen height */
     margin: 0; /* Remove default margin */
     background-color: palevioletred;
 }
@@ -39,19 +39,13 @@ body {
     transform-origin: 100% 100%; 
 }
 
-/* section {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-} */
+section {
+    gap: 8vw;
+}
 
 img {
-    width: 300px; /* Ensure images do not overflow their container */
-    height: auto;
+    width: auto; /* Ensure images do not overflow their container */
+    height: 400px;
     object-fit: cover; /* Cover ensures images fill their designated space without distortion */
 }
 
