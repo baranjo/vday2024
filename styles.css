@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative; 
-    width: 60vw; /* 80% of the viewport width */
+    width: 80vw; /* 80% of the viewport width */
     height: 54vw; /* Adjust the height based on the width to maintain aspect ratio */
     overflow: hidden; /* Optional: in case you want everything outside the heart shape to be hidden */
 } 
