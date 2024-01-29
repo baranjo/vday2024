@@ -1,36 +1,55 @@
 body {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    margin: 0; /* Remove default margin */
     background-color: palevioletred;
 }
 
 #heart { 
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative; 
-    width: 100px; 
-    height: 90px; 
+    width: 80vw; /* 80% of the viewport width */
+    height: 72vw; /* Adjust the height based on the width to maintain aspect ratio */
+    overflow: hidden; /* Optional: in case you want everything outside the heart shape to be hidden */
 } 
 
 #heart:before, #heart:after { 
     position: absolute; 
     content: ""; 
-    left: 50px; 
-    top: 0; 
-    width: 50px; 
-    height: 80px; 
+    width: 40vw; /* Half of the heart's width for each pseudo-element */
+    height: 72vw; /* Same as the heart's height to maintain the shape */
     background: red; 
-    border-radius: 50px 50px 0 0; 
-    transform: rotate(-45deg); 
+    border-radius: 40vw 40vw 0 0; /* Ensure the rounded part matches the new size */
     transform-origin: 0 100%; 
 } 
 
+#heart:before {
+    left: 50%; /* Start from the middle */
+    transform: rotate(-45deg); 
+}
+
 #heart:after { 
-    left: 0; 
-    transform: rotate(45deg); 
-    transform-origin :100% 100%; 
+    left: 50%; /* Adjusted to start from the middle */
+    transform: translateX(-100%) rotate(45deg); /* Adjusted to ensure proper alignment */
+    transform-origin: 100% 100%; 
 }
 
 section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 100%; /* Ensure images do not overflow their container */
+    height: auto;
+    object-fit: cover; /* Cover ensures images fill their designated space without distortion */
 }
