@@ -1,4 +1,4 @@
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     body {
         font-size: 14px;
         justify-content: center;
@@ -14,14 +14,6 @@
         width: 50%; /* Adjust for fewer images per row or more space */
     }
     
-    .content-container {
-        display: flex;
-        flex-direction: column; /* Stacks children vertically */
-        justify-content: center; /* Centers content vertically in the container */
-        align-items: center; /* Centers content horizontally in the container */
-        height: 100vh; /* Optional: Adjusts the height to fill the screen */
-        text-align: center; /* Centers text inside the child elements */
-    }
     
 }
 
@@ -83,6 +75,4 @@ img {
 h1 {
     font-family: 'Courier New', Courier, monospace;
     font-size: xx-large;
-    justify-content: center;
-    align-items: center;
 }
