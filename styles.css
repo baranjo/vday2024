@@ -13,6 +13,16 @@
     .image-row img {
         width: 50%; /* Adjust for fewer images per row or more space */
     }
+    
+    .content-container {
+        display: flex;
+        flex-direction: column; /* Stacks children vertically */
+        justify-content: center; /* Centers content vertically in the container */
+        align-items: center; /* Centers content horizontally in the container */
+        height: 100vh; /* Optional: Adjusts the height to fill the screen */
+        text-align: center; /* Centers text inside the child elements */
+    }
+    
 }
 
 body {
@@ -24,6 +34,7 @@ body {
     margin: 0; /* Remove default margin */
     background-color: palevioletred;
 }
+
 
 #heart { 
     position: relative; 
