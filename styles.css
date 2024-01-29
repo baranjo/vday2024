@@ -45,11 +45,16 @@ section {
 
 img {
     width: auto; /* Ensure images do not overflow their container */
-    height: 400px;
+    height: 300px;
     object-fit: cover; /* Cover ensures images fill their designated space without distortion */
 }
 
 .grid {
     display: flex;
     flex-direction: row;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
 }
