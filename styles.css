@@ -24,34 +24,28 @@ body {
 }
 
 #heart { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed; 
-    width: 80vw; /* 80% of the viewport width */
-    height: 54vw; /* Adjust the height based on the width to maintain aspect ratio */
-    overflow: hidden; /* Optional: in case you want everything outside the heart shape to be hidden */
+    position: relative; 
+    width: 100px; 
+    height: 90px; 
 } 
 
 #heart:before, #heart:after { 
     position: absolute; 
     content: ""; 
-    width: 30vw; /* Half of the heart's width for each pseudo-element */
-    height: 54vw; /* Same as the heart's height to maintain the shape */
+    left: 50px; 
+    top: 0; 
+    width: 50px; 
+    height: 80px; 
     background: red; 
-    border-radius: 30vw 30vw 0 0; /* Ensure the rounded part matches the new size */
+    border-radius: 50px 50px 0 0; 
+    transform: rotate(-45deg); 
     transform-origin: 0 100%; 
 } 
 
-#heart:before {
-    left: 50%; /* Start from the middle */
-    transform: rotate(-45deg); 
-}
-
 #heart:after { 
-    left: 50%; /* Adjusted to start from the middle */
-    transform: translateX(-100%) rotate(45deg); /* Adjusted to ensure proper alignment */
-    transform-origin: 100% 100%; 
+    left: 0; 
+    transform: rotate(45deg); 
+    transform-origin :100% 100%; 
 }
 
 section {
