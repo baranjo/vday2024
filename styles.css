@@ -1,25 +1,30 @@
 body {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     background-color: palevioletred;
 }
 
 #heart { 
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative; 
-    width: 100px; 
-    height: 90px; 
+    width: 200px; /* Adjusted for demonstration */
+    height: 180px; /* Adjusted for demonstration */
+    overflow: hidden; /* Hide overflow to maintain heart shape */
 } 
 
 #heart:before, #heart:after { 
     position: absolute; 
     content: ""; 
-    left: 50px; 
+    left: 100px; /* Adjusted for demonstration */
     top: 0; 
-    width: 50px; 
-    height: 80px; 
+    width: 100px; /* Adjusted for demonstration */
+    height: 160px; /* Adjusted for demonstration */
     background: red; 
-    border-radius: 50px 50px 0 0; 
+    border-radius: 100px 100px 0 0; /* Adjusted for smoother curve */
     transform: rotate(-45deg); 
     transform-origin: 0 100%; 
 } 
@@ -27,10 +32,19 @@ body {
 #heart:after { 
     left: 0; 
     transform: rotate(45deg); 
-    transform-origin :100% 100%; 
+    transform-origin: 100% 100%; 
 }
 
 section {
     display: flex;
     flex-direction: row;
+    width: 100%; /* Fill heart width */
+    height: 100%; /* Fill heart height */
+    position: absolute; /* Position over the heart */
+}
+
+img {
+    width: 33.33%; /* Adjust size to fit three images side by side */
+    height: auto;
+    object-fit: cover; /* Cover ensures images fill the space without distortion */
 }
