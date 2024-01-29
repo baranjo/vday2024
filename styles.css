@@ -13,18 +13,18 @@ body {
     justify-content: center;
     align-items: center;
     position: relative; 
-    width: 80vw; /* 80% of the viewport width */
-    height: 72vw; /* Adjust the height based on the width to maintain aspect ratio */
+    width: 60vw; /* 80% of the viewport width */
+    height: 54vw; /* Adjust the height based on the width to maintain aspect ratio */
     overflow: hidden; /* Optional: in case you want everything outside the heart shape to be hidden */
 } 
 
 #heart:before, #heart:after { 
     position: absolute; 
     content: ""; 
-    width: 40vw; /* Half of the heart's width for each pseudo-element */
-    height: 72vw; /* Same as the heart's height to maintain the shape */
+    width: 30vw; /* Half of the heart's width for each pseudo-element */
+    height: 54vw; /* Same as the heart's height to maintain the shape */
     background: red; 
-    border-radius: 40vw 40vw 0 0; /* Ensure the rounded part matches the new size */
+    border-radius: 30vw 30vw 0 0; /* Ensure the rounded part matches the new size */
     transform-origin: 0 100%; 
 } 
 
