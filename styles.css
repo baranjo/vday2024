@@ -1,3 +1,18 @@
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    #heart {
+        width: 90vw;
+        height: 81vw; /* Adjust based on aspect ratio */
+    }
+
+    .image-row img {
+        width: 50%; /* Adjust for fewer images per row or more space */
+    }
+}
+
 body {
     display: flex;
     flex-direction: column;
